@@ -229,6 +229,11 @@ audio {
   width: 30%;
   display: block;
   margin: 0 auto;
+  cursor: pointer; /* Added cursor change to show button is usable */
+}
+
+.comment-form input[type="submit"]:hover {
+  background-color: #555; /* Change background on hover for feedback */
 }
 
 .comment-container {
