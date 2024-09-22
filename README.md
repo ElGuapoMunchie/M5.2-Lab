@@ -10,6 +10,7 @@ First, clone this repository to a new, empty directory on your computer. Then yo
 ## Accessibility Lab Answers
 ### Color
 **Can you do a test of the current color contrast (text/background), report the results of the test, and then fix it by changing the assigned colors?**
+The test failed. The contrast ratio was `2.79:1`. Switching the hex value of the background color to #FFFFFF (white), the ratio improved to `14.35:1`. 
 
 ### Semantic HTML
 **1. The content is still not very accessible — report on what happens when you try to navigate it using a keyboard.**
