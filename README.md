@@ -24,12 +24,14 @@ I'm able to select the buttons in the menu, as well as the links and searchbar; 
 
 Yes. I made it so each section is tabbable, updated the text to properly involve headers, and also put the text into paragraphs. 
 
-**3. The navigation menu part of the site (wrapped in <div class="nav"></div>) could be made more accessible by putting it in a proper HTML semantic element. Which one should it be updated to? Make the update.**
+**3. The navigation menu part of the site (wrapped in \<div class="nav"></div>) could be made more accessible by putting it in a proper HTML semantic element. Which one should it be updated to? Make the update.**
 
 This part of the menu should be wrapped in the `<nav>` html element. I've wrapped it as needed.
 
 ### Images
 **The images are currently inaccessible to screen reader users. Can you fix this?**
+
+Yes! I've added descriptions to the pictures to make them more accessible.
 
 ### Audio Player
 **1. The <audio> player isn't accessible to hearing impaired (deaf) people — can you add some kind of accessible alternative for these users?**
