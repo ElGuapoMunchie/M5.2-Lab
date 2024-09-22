@@ -10,12 +10,23 @@ First, clone this repository to a new, empty directory on your computer. Then yo
 ## Accessibility Lab Answers
 ### Color
 **Can you do a test of the current color contrast (text/background), report the results of the test, and then fix it by changing the assigned colors?**
-The test failed. The contrast ratio was `2.79:1`. Switching the hex value of the background color to #FFFFFF (white), the ratio improved to `14.35:1`. 
+
+The tests all failed. The contrast ratio was `2.79:1`. Switching the hex value of the background color to #FFFFFF (white), the ratio improved to `14.35:1`, which also caused it to pass all tests. 
+
+[Link to tests for color/contrast.](https://webaim.org/resources/contrastchecker/)
 
 ### Semantic HTML
 **1. The content is still not very accessible — report on what happens when you try to navigate it using a keyboard.**
+
+I'm able to select the buttons in the menu, as well as the links and searchbar; and at the bottom I can use the audio player to play the audio and scrub through it. However, I'm not able to press the comment button, nor can I navigate sections on the page using the tab key.
+
 **2. Can you update the article text to make it easier for screen reader users to navigate?**
+
+Yes. I made it so each section is tabbable, updated the text to properly involve headers, and also put the text into paragraphs. 
+
 **3. The navigation menu part of the site (wrapped in <div class="nav"></div>) could be made more accessible by putting it in a proper HTML semantic element. Which one should it be updated to? Make the update.**
+
+This part of the menu should be wrapped in the `<nav>` html element. I've wrapped it as needed.
 
 ### Images
 **The images are currently inaccessible to screen reader users. Can you fix this?**
