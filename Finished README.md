@@ -1,4 +1,4 @@
-# Web Dev Starter Code
+# M5.2 Lab - Accessibility Features
 
 ## Overview
 
@@ -35,37 +35,37 @@ Yes! I've added descriptions to the pictures to make them more accessible.
 
 ### Audio Player
 **1. The <audio> player isn't accessible to hearing impaired (deaf) people — can you add some kind of accessible alternative for these users?**
+Yes- I added a transcript so that they can read what the audio says.
+
 **2. The <audio> player isn't accessible to those using older browsers that don't support HTML audio. How can you allow them to still access the audio?**
+I added a fallback link that allows the user to download the audio file instead.
 
 ### Forms
 **1. The <input> element in the search form at the top could do with a label, but we don't want to add a visible text label that would potentially spoil the design and isn't really needed by sighted users. How can you add a label that is only accessible to screen readers?**
+
+I added a `<role="searchbox">` tag so that the screen reader can tell the user that the search box is a search box.
+
 **2. The two <input> elements in the comment form have visible text labels, but they are not unambiguously associated with their labels — how do you achieve this? Note that you'll need to update some of the CSS rule as well.**
+
+I'm not 100% certain I've achieved this... I added labels, roles, and aria-labels to indicate that these elements were part of a form, and that they were required to complete a comment submission. I've also made it so that the cursor icon changes when the mouse hovers over a button, and made it so that the background color of the submit button changes when it is hovered over.
 
 ### Show/Hide Comment Control
 **The show/hide comment control button is not currently keyboard-accessible. Can you make it keyboard-accessible, both in terms of focusing it using the tab key and activating it using the return key?**
 
+Yes! Did that.
+
 ### Table
 **The data table is not currently very accessible — it is hard for screen reader users to associate data rows and columns together, and the table also has no kind of summary to make it clear what it shows. Can you add some features to your HTML to fix this problem?**
+
+I added a caption, as well as attributes the specify the scope of row/column items in the table to make it easier for users utilizing screen readers. I've also added a summary as well. 
 
 ### Other Considerations
 **Can you list two more ideas for improvements that would make the website more accessible?**
 
+One way I could improve the accessibility of the site is to replace the existing HTML that powers the audio player with my own custom one. [This link](https://developer.mozilla.org/en-US/docs/Learn/Accessibility/Multimedia#accessible_audio_and_video_controls) talks about how one could make those changes, however I haven't worked with JS in a while and don't have it in me to pursue that implementation.
+
+A second improvement I would make is to make it so all button/menu bar items have their color change while the mouse is hovering over it. I did this for the submit button, but am not sure how I would make it work with all the other buttons in the navigation bar. (I did this one! It's super cool! Also, I was hoping to make the edges of the background be blurred, but couldn't figure out how to do that without also blurring the text.)
 
 ## Sources and Credits
 
-TODO: You must credit the sources and authors of any code, libraries, or other
-assets you use in your project. If you leave this section blank, your project
-will be considered in violation of the Academic Honesty policy unless you truly
-created everything from scratch with no outside help. If you need to use a
-source that you cannot credit (e.g. a classmate's work), you must get explicit
-permission from your instructor.
-
-A simple bulleted list below is sufficient. For example:
-
-- Bootstrap: https://getbootstrap.com/
-- jQuery: https://jquery.com/
-- Background image: https://unsplash.com/photos/...
-- Sound effects: https://freesound.org/people/...
-- Icons: https://fontawesome.com/
-- Fonts: https://fonts.google.com/
-- etc.
+The base repository came from Shane Panter's [starter github repo](https://github.com/shanep/web-dev-starter)
